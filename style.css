@@ -141,6 +141,7 @@ h3 {
 .change > a:hover,
 .change > a:focus {
     color: hsl(245, 75%, 52%, 0.7);
+    text-decoration: none;
 }
 
 button {
