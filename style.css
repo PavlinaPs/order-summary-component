@@ -1,0 +1,194 @@
+/*** custom variables ***/
+:root {
+    /* colors */
+    --color-pale-blue: hsl(225, 100%, 94%);
+    --color-bright-blue: hsl(245, 75%, 52%);
+
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-desaturated-blue: hsl(224, 23%, 55%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+    --color-white: white;
+
+    /* typography */
+    --ff-sans: 'Red Hat Display', sans-serif;
+    --fs-normal: 16px;
+    --fs-normal-mobile: 15px;
+
+    --fw-normal: 500;
+    --fw-mid: 700;
+    --fw-bold: 900;
+}
+
+/*** reset ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** set-up ***/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+
+   font-family: var(--ff-sans);
+   font-size: var(--fs-normal);
+   font-weight: var(--fw-normal);
+
+   background-color: var(--color-pale-blue);
+}
+
+/*** components ***/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 325px;
+    height: 568px;
+    background-color: var(--color-white);
+    border-radius: 20px;
+}
+
+.image-wrap {
+    flex-shrink: 0;
+}
+
+.image-wrap img {
+    width: 325px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    margin-top: 17px;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--color-dark-blue);
+}
+
+.main-text {
+    margin-top: 6px;
+    padding: 0 35px;
+    font-size: var(--fs-normal-mobile);
+    color: var(--color-desaturated-blue);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.annual-plan-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    width: 275px;
+    height: 80px;
+    margin-top: 17px;
+
+    background-color: var(--color-very-pale-blue);
+    border-radius: 10px;
+    /* outline: 1px solid red; */
+}
+
+.music-icon {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    background-color: var(--color-pale-blue);
+    background-image: url(./images/icon-music.svg);
+    background-position: center;
+    border-radius: 50%;
+}
+
+.block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 120px;
+    margin-left: 8px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: var(--fw-bold);
+    color: var(--color-dark-blue);
+}
+
+.price {
+    font-size: 14px;
+    font-weight: var(--fw-normal);
+    color: var(--color-desaturated-blue);
+}
+
+.change {
+    font-size: 13px;
+    font-weight: var(--fw-bold);
+    color: var(--color-bright);
+}
+
+.change > a,
+.change > a:visited {
+    color: var(--color-bright-blue);
+}
+
+.change > a:hover,
+.change > a:focus {
+    color: hsl(245, 75%, 52%, 0.7);
+}
+
+button {
+    flex-shrink: 0;
+    width: 275px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: var(--fs-normal-mobile);
+    font-weight: var(--fw-mid);
+    color: var(--color-very-pale-blue);
+    background-color: var(--color-bright-blue);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px 0px hsl(245, 75%, 52%, 0.2);
+}
+
+button:hover,
+button:focus {
+    background-color: hsl(245, 75%, 52%, 0.7);
+}
+
+.cancel {
+    margin-top: 13px;
+    padding-bottom: 35px;
+    font-size: var(--fs-normal-mobile);
+    font-weight: var(--fw-bold);
+    color: var(--color-desaturated-blue);
+}
+
+.cancel:hover,
+.cancel:focus {
+    color: var(--color-dark-blue);
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+    body {
+        min-width: 1440px;
+    }
+}
