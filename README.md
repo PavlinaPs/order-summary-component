@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge I learned more about corner radius. I new it is a shorthand but when I looked it up on MDN (link below), I was suprised how many shapes I can create with it. For exapmple: 
+In this challenge I learned more about border radius. I new it is a shorthand but when I looked it up on MDN (link below), I was suprised how many shapes I can create with it. For exapmple: 
 
 ```css
 .div1 {
