@@ -188,7 +188,7 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 45em) {
     body {
         width: 1440px;
     }
